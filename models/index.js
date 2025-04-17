@@ -30,7 +30,7 @@ db.UserAchievements = require("./userachievements")(sequelize, Sequelize);
 // 👉 Импортируем новые модели
 db.TaskTopic = require("./taskTopic")(sequelize, Sequelize);
 db.ProgrammingTask = require("./programmingTask")(sequelize, Sequelize);
-db.TestQuestion = require("./TestQuestion")(sequelize, Sequelize);
+db.TestQuestion = require("./testQuestion")(sequelize, Sequelize);
 db.UserProgrammingSubmission = require("./UserProgrammingSubmission")(sequelize, Sequelize);
 db.UserTestAnswer = require("./UserTestAnswer")(sequelize, Sequelize);
 
