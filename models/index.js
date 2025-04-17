@@ -28,11 +28,11 @@ db.Message = require("./message")(sequelize, Sequelize);
 db.UserAchievements = require("./userachievements")(sequelize, Sequelize);
 
 // 👉 Импортируем новые модели
-db.TaskTopic = require("./tasktopic")(sequelize, Sequelize);
-db.ProgrammingTask = require("./programmingtask")(sequelize, Sequelize);
-db.TestQuestion = require("./testquestion")(sequelize, Sequelize);
-db.UserProgrammingSubmission = require("./userprogrammingsubmission")(sequelize, Sequelize);
-db.UserTestAnswer = require("./usertestanswer")(sequelize, Sequelize);
+db.TaskTopic = require("./taskTopic")(sequelize, Sequelize);
+db.ProgrammingTask = require("./programmingTask")(sequelize, Sequelize);
+db.TestQuestion = require("./TestQuestion")(sequelize, Sequelize);
+db.UserProgrammingSubmission = require("./UserProgrammingSubmission")(sequelize, Sequelize);
+db.UserTestAnswer = require("./UserTestAnswer")(sequelize, Sequelize);
 
 // 🔗 Настройка связей
 db.User.hasMany(db.TaskProgress, { foreignKey: "userId", onDelete: "CASCADE" });
